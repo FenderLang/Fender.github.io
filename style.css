@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #616161;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #333 30%, dodgerblue 100%);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    padding-bottom: 10px;
+    /* #c051cf */
+    /* 2376ae */
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}
+
+.button {
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: white;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 16pt;
+    transition: all .5s;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border-radius: 12px;
+    
+}
+/* changes button when hovered over */
+.button:hover {
+    color: white;
+    background-color: #222;
+    border-color: dodgerblue;
+    text-decoration: none;
+}
+
+.Home {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 130px 0px;
+    margin: 0px;
+    text-align: center;
+    background-size: cover;
+    background-image: url("https://images.wallpaperscraft.com/image/street_city_buildings_133451_1920x1080.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+.maintext {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+#About {
+    height: 75%;
+    width: 100%;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    margin: auto auto;
+    padding: 30px 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    padding-right: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+    width: 50%;
+}
+
+.rowprojects {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container {
+    width: 100%;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+.headertext h3 {
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1200px)
+{
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Desktop Sizing */
+
+@media screen and (max-width: 1920px) and (min-width: 992px){
+    .about-us-box {
+        margin-top: 100px;
+    }
+    
+    .about-us-box-text {
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+        vertical-align: middle;
+        align-items: center;
+        position: relative;
+    }
+    
+    .about-us-box-text h3 {
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+    }
+    
+    .about-us-box-text .medium-paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .about-us-box-img img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px #222;
+        width: 15%;
+        height: 30%;
+        align-content: inline;
+        vertical-align: middle;
+        /* float: right; */
+        border-style: none;
+        position: absolute;
+
+    }
+} 
+
+/* Tablet Sizing */
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .about-us-box {
+        margin-top: 100px;
+    }
+    
+    .about-us-box-text {
+        /* padding-right: 30px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; */
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+        vertical-align: middle;
+        align-items: center;
+        position: relative;
+    }
+    
+    .about-us-box-text h3 {
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+    }
+    
+    .about-us-box-text .medium-paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 32px;
+    }
+    
+    .about-us-box-img img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px #222;
+        width: 40%;
+        height: 30%;
+        align-content: inline;
+        vertical-align: middle;
+        /* float: right; */
+        border-style: none;
+        position: absolute;
+        
+    }
+} 
+
+/* Ipad mini sizing */
+
+@media screen and (max-width: 768px) and (min-width: 476px){
+    .about-us-box {
+        margin-top: 100px;
+    }
+
+    .rowprojects {
+        display: block;
+    }
+    
+    .about-us-box-text {
+        /* padding-right: 30px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; */
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+        vertical-align: middle;
+        align-items: center;
+        position: relative;
+    }
+    
+    .about-us-box-text h3 {
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+    }
+    
+    .about-us-box-text .medium-paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 32px;
+    }
+    
+    .about-us-box-img img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px #222;
+        width: 40%;
+        height: 30%;
+        align-content: inline;
+        vertical-align: middle;
+        /* float: right; */
+        border-style: none;
+        position: absolute;
+        
+    }
+} 
+
+/* Iphone Sizing */
+
+@media screen and (max-width: 476px) and (min-width: 374px){
+    .about-us-box {
+        margin-top: 100px;
+    }
+    
+    .about-us-box-text {
+        /* padding-right: 30px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; */
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+        vertical-align: middle;
+        align-items: center;
+        /* position: relative; */
+    }
+
+    .home {
+        padding: 0px 0px;
+        margin: 50px 20px;
+    }
+
+    .row {
+        display: none;
+        /* flex-wrap: wrap; */
+        text-align: center;
+        width: 100%;
+        float: center;
+    }
+    
+    .about-us-box-text h3 {
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .about-us-box-text .medium-paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 32px;
+        text-align: center;
+    }
+    
+    .about-us-box-img img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px #222;
+        width: 100%;
+        height: 100%;
+        align-content: inline;
+        /* vertical-align: middle; */
+        /* float: right; */
+        border-style: none;
+        /* position: absolute; */
+        
+    }
+} 
+
+/* Changes nav bar to use little icon for nav menu to drop down */
+
+@media screen and (min-width: 768px){
+    .navbar {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 10vh;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover {
+        color: #333;
+    }
+
+    .nav-links:hover {
+        color: dodgerblue;
+    }
+
+    #Home {
+        padding: 40px;
+    }
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+}
+
+#Projects {
+    height: 75%;
+    width: 100%;
+    background-color: #555;
+}
+
+#Contact {
+    height: 75%;
+    width: 100%;
+    background-color: #666;
+}
+
+.highlighttext {
+    color: dodgerblue;
+    font-weight: 600;
+}
+
+footer {
+    padding: 20px 0px;
+    background-color: #222;
+    text-align: center;
+    color: white;
+}
+
+/* div.highlightTextIn a:before
+{
+    position: absolute;
+    color: dodgerblue;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextOut a:hover:before, div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+/* div.highlightTextIn a
+{
+    color: white; 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+}   */
